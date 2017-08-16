@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/ebrous/.oh-my-zsh
+export ZSH=/Users/eric/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -84,11 +84,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# 
+#
+# Font Maps
+source ~/.fonts/*.sh
+
 # POWER LEVEL 9K
 POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='|'
 POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=' '
-POWERLEVEL9K_LEFT_SEGMENT_END_SEPARATOR='\uE0B0 '
+POWERLEVEL9K_LEFT_SEGMENT_END_SEPARATOR='\uF35A '
 POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR='|'
 POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=''
 POWERLEVEL9K_HOME_ICON=''
@@ -121,7 +124,7 @@ POWERLEVEL9K_LOAD_WARNING_FOREGROUND="249"
 POWERLEVEL9K_LOAD_NORMAL_FOREGROUND="249"
 POWERLEVEL9K_RAM_BACKGROUND="black"
 POWERLEVEL9K_RAM_FOREGROUND="249"
-POWERLEVEL9K_RAM_ELEMENTS=(ram_free) 
+POWERLEVEL9K_RAM_ELEMENTS=(ram_free)
 POWERLEVEL9K_RAM_ICON="\uF0E4 "
 POWERLEVEL9K_BATTERY_LOW_BACKGROUND="black"
 POWERLEVEL9K_BATTERY_CHARGING_BACKGROUND="black"
@@ -136,16 +139,16 @@ POWERLEVEL9K_BATTERY_CHARGING_VISUAL_IDENTIFIER_COLOR="yellow"
 POWERLEVEL9K_BATTERY_CHARGED_VISUAL_IDENTIFIER_COLOR="green"
 POWERLEVEL9K_BATTERY_DISCONNECTED_VISUAL_IDENTIFIER_COLOR="249"
 POWERLEVEL9K_BATTERY_VERBOSE="false"
-POWERLEVEL9K_BATTERY_ICON=""
+POWERLEVEL9K_BATTERY_ICON="\uF301"
 POWERLEVEL9K_TIME_BACKGROUND="black"
 POWERLEVEL9K_TIME_FOREGROUND="249"
-POWERLEVEL9K_TIME_FORMAT="%D{%m.%d %H:%M:%S \uf017}"
+POWERLEVEL9K_TIME_FORMAT="%D{%m.%d %H:%M:%S \uF017}"
 POWERLEVEL9K_CUSTOM_WIFI_SIGNAL="zsh_wifi_signal"
 POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_BACKGROUND="black"
 POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_FOREGROUND="249"
 
 zsh_wifi_signal(){
-        local output=$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport -I) 
+        local output=$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport -I)
         local airport=$(echo $output | grep 'AirPort' | awk -F': ' '{print $2}')
 
         if [ "$airport" = "Off" ]; then
@@ -159,7 +162,7 @@ zsh_wifi_signal(){
                 [[ $speed -gt 100 ]] && color='%F{green}'
                 [[ $speed -lt 50 ]] && color='%F{red}'
 
-                echo -n "%{$color%}$ssid   $speed Mb/s%{%f%}" # removed char not in my PowerLine font 
+                echo -n "%{$color%}$ssid   $speed Mb/s%{%f%}" # removed char not in my PowerLine font
         fi
 }
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
