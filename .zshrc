@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=~/Library/Python/2.7/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/eric/.oh-my-zsh
@@ -84,6 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias gitpurge="git checkout master && git pull origin master && git fetch -p && git branch -d $(git branch --merged | grep master -v)"
 #
 # Font Maps
 source ~/.fonts/*.sh
@@ -103,6 +105,8 @@ POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="black"
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="249"
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="black"
 POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="249"
+POWERLEVEL9K_NODE_VERSION_BACKGROUND="black"
+POWERLEVEL9K_NODE_VERSION_FOREGROUND="green"
 POWERLEVEL9K_VCS_GIT_GITHUB_ICON=''
 POWERLEVEL9K_VCS_BRANCH_ICON='\uF126 '
 POWERLEVEL9K_VCS_UNTRACKED_ICON='\u25CF'
@@ -116,12 +120,6 @@ POWERLEVEL9K_STATUS_OK_BACKGROUND="black"
 POWERLEVEL9K_STATUS_OK_FOREGROUND="green"
 POWERLEVEL9K_STATUS_ERROR_BACKGROUND="black"
 POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
-POWERLEVEL9K_LOAD_CRITICAL_BACKGROUND="black"
-POWERLEVEL9K_LOAD_WARNING_BACKGROUND="black"
-POWERLEVEL9K_LOAD_NORMAL_BACKGROUND="black"
-POWERLEVEL9K_LOAD_CRITICAL_FOREGROUND="249"
-POWERLEVEL9K_LOAD_WARNING_FOREGROUND="249"
-POWERLEVEL9K_LOAD_NORMAL_FOREGROUND="249"
 POWERLEVEL9K_RAM_BACKGROUND="black"
 POWERLEVEL9K_RAM_FOREGROUND="249"
 POWERLEVEL9K_RAM_ELEMENTS=(ram_free)
@@ -165,5 +163,9 @@ zsh_wifi_signal(){
                 echo -n "%{$color%}$ssid   $speed Mb/s%{%f%}" # removed char not in my PowerLine font
         fi
 }
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator load ram custom_wifi_signal time battery)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir node_version vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator ram custom_wifi_signal time battery)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
