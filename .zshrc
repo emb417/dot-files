@@ -54,6 +54,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
+plugins+=(zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,6 +87,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias gitpurge="git checkout master && git pull origin master && git fetch -p && git branch -d $(git branch --merged | grep master -v)"
+# alias pfwd="sudo pfctl -evf /etc/pf.anchors/nda"
 #
 # Font Maps
 source ~/.fonts/*.sh
