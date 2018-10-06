@@ -23,6 +23,8 @@
 1. Copy files from github/dot-files to ~
 1. Install vim `brew install vim`
 1. Install PowerLevel9K Theme `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
+1. Clone Awesome Fonts `git clone git@github.com:gabrielelana/awesome-terminal-fonts.git`
+1. Install Fonts in build dir
 
 
 * Atom
