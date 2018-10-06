@@ -17,6 +17,7 @@
 1. Close terminal and Open iterm
 1. Clone dot-files into github dir `git clone git@github.com:emb417/dot-files.git`
 1. Copy files from github/dot-files to ~
+1. Install git `brew install git`
 
 
 * Atom
