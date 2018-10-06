@@ -18,6 +18,8 @@
 1. Clone dot-files into github dir `git clone git@github.com:emb417/dot-files.git`
 1. Copy files from github/dot-files to ~
 1. Install git `brew install git`
+1. Configure git user name `git config --global user.name "Eric Brousseau"`
+1. Configure git email `git config --global user.email "emb417@gmail.com"`
 
 
 * Atom
