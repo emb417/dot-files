@@ -14,7 +14,9 @@
 1. Install Iterm2 `brew cask install iterm2`
 1. Install zsh `brew install zsh`
 1. Install Oh-My-Zsh `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-1. Copy .zshrc from git to ~
+1. Close terminal and Open iterm
+1. Clone dot-files into github dir `git clone git@github.com:emb417/dot-files.git`
+1. Copy files from github/dot-files to ~
 
 
 * Atom
