@@ -24,7 +24,7 @@
 1. Install vim `brew install vim`
 1. Install PowerLevel9K Theme `git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k`
 1. Clone Awesome Fonts `git clone git@github.com:gabrielelana/awesome-terminal-fonts.git`
-1. Install Fonts in build dir
+1. Install Fonts using this guide: [https://github.com/gabrielelana/awesome-terminal-fonts/wiki/OS-X](https://github.com/gabrielelana/awesome-terminal-fonts/wiki/OS-X)
 
 
 * Atom
