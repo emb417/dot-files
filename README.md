@@ -8,6 +8,7 @@
 1. Configure Night Shift
 1. Dowload Divvy Trial, Register with License
 1. Copy PandaBar from USB Stick
+1. Install Homebrew `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 1. Install Iterm2 `brew cask install iterm2`
 1. Install zsh `brew install zsh`
 1. Install Oh-My-Zsh `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
