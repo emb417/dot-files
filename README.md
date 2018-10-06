@@ -20,6 +20,7 @@
 1. Install git `brew install git`
 1. Configure git user name `git config --global user.name "Eric Brousseau"`
 1. Configure git email `git config --global user.email "emb417@gmail.com"`
+1. Configure git to use keychain `git config --global credential.helper osxkeychain`
 
 
 * Atom
