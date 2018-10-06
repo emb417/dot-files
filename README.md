@@ -21,6 +21,7 @@
 1. Change Permission Level `chmod 600 ~/.ssh/*`
 1. Clone dot-files into github dir `git clone git@github.com:emb417/dot-files.git`
 1. Copy files from github/dot-files to ~
+1. Install vim `brew install vim`
 
 
 * Atom
