@@ -34,5 +34,3 @@
   * Atom Beautify
   * linter
   * linter-babel
-* PowerLevel9K
-  * [Awesome-Terminal-Fonts](https://github.com/gabrielelana/awesome-terminal-fonts)
