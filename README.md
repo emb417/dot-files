@@ -3,7 +3,9 @@
 ## Environment Setup
 1. Download / Install Xcode from App Store
 1. Download / Install Google Chrome
-1. Create .ssh Directory `mkdir ~/.ssh` and cp ssh keys from USB Stick to ~/.ssh
+1. Create .ssh Directory `mkdir ~/.ssh`
+1. Copy SSH Keys from USB Stick to ~/.ssh
+1. Change Permission Level `chmod 600 ~/.ssh/*`
 1. Download / Install Slack
 1. Configure Night Shift
 1. Dowload Divvy Trial, Register with License
