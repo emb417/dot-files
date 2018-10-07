@@ -27,12 +27,13 @@
 1. Configure iterm profile>text Fonts and Non-ASCII Fonts to use Roboto Mono Medium
 1. Clone Awesome Fonts `git clone git@github.com:gabrielelana/awesome-terminal-fonts.git`
 1. Install Fonts using this guide: [https://github.com/gabrielelana/awesome-terminal-fonts/wiki/OS-X](https://github.com/gabrielelana/awesome-terminal-fonts/wiki/OS-X)
+1. Install Editor of choice:
+  1. Visual Studio Code `brew cask install visual-studio-code`
+  1. Atom `brew cask install atom`
 
-
-* Atom
-  * Split-Diff
+* Atom Plugins
   * Mini-Map
+  * Split-Diff
   * Split-Diff-Minimap
-  * Atom Beautify
   * linter
   * linter-babel
